@@ -33,6 +33,7 @@ export const Field = styled(BookInput)`
   border-radius: 6px;
   border: 2px solid black;
   height: 45px;
+  width: 480px;
 `;
 
 export const FormField = styled.label`
