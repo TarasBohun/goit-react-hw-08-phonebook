@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 // import 'modern-normalize';
 
+import img from '../images/notebook.jpg';
+
 export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
@@ -10,11 +12,14 @@ export const GlobalStyle = createGlobalStyle`
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fdfeff;
+  background-image: url(${img});
+  background-color: #b3b9bd;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: center;  */
 
 }
   code {
@@ -31,9 +36,15 @@ ul{
 button{
   cursor: pointer;
   padding: 5px 10px;
-  border-radius: 5px ;
+  border-radius: 6px ;
   border: 2px solid grey;
   color: #566574;
+  
+  &:hover {
+    transition: all 0.3s;
+    color: paleturquoise;
+    background-color: #566574;
+  }
 }
 
 h1, h2 {
@@ -45,6 +56,7 @@ input {
   padding: 3px;
   border-radius: 3px;
   font-size: 12px;
+  background-color: #ffffffe9;
 }
 
 a {

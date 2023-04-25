@@ -20,7 +20,6 @@ export const LoginForm = () => {
   return (
     <Form onSubmit={handleSubmit} autoComplete="off">
       <label>
-        {/* Email */}
         <Input
           type="email"
           name="email"
@@ -29,7 +28,6 @@ export const LoginForm = () => {
         />
       </label>
       <label>
-        {/* Password */}
         <Input
           type="password"
           name="password"

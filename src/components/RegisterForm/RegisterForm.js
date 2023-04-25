@@ -27,17 +27,14 @@ export const RegisterForm = () => {
     >
       <Form>
         <FormField>
-          {/* Username */}
           <Field name="name" type="text" placeholder="Username" />
           <ErrorMessage name="Username" component="div" />
         </FormField>
         <FormField>
-          {/* Email */}
           <Field name="email" placeholder="Email" type="email" />
           <ErrorMessage name="email" component="div" />
         </FormField>
         <FormField>
-          {/* Password */}
           <Field name="password" placeholder="Password" type="password" />
           <ErrorMessage name="password" component="div" />
         </FormField>

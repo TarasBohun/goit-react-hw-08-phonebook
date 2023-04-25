@@ -8,7 +8,6 @@ import { Layout } from './Layout/Layout';
 
 import { refreshUser } from '../redux/auth/operations';
 import { useAuth } from '../hooks/useAuth';
-// import ContactDetails from 'pages/Contacts/ContactDetails';
 
 const HomePage = lazy(() => import('../pages/Home'));
 const RegisterPage = lazy(() => import('../pages/Register'));
@@ -50,12 +49,6 @@ export const App = () => {
             <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
           }
         ></Route>
-        {/* <Route
-          path=":id"
-          element={
-            <PrivateRoute redirectTo="/login" component={<ContactDetails />} />
-          }
-        /> */}
 
         <Route path="*" element={<Navigate to="/" replace={true} />} />
       </Route>

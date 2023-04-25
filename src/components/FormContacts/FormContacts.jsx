@@ -1,5 +1,5 @@
-import { Formik, Field, ErrorMessage } from 'formik';
-import { FormField, Form } from './FormContacts.styled';
+import { Formik, ErrorMessage } from 'formik';
+import { Form, SubmitButton, Field } from './FormContacts.styled';
 
 import { useDispatch } from 'react-redux';
 import { useContacts } from 'hooks/useContacts';
@@ -29,7 +29,7 @@ export const FormContacts = () => {
       }}
     >
       <Form>
-        <FormField>
+        <label>
           <Field
             type="text"
             name="name"
@@ -39,9 +39,9 @@ export const FormContacts = () => {
             required
           />
           <ErrorMessage name="name" />
-        </FormField>
+        </label>
 
-        <FormField>
+        <label>
           <Field
             type="tel"
             name="number"
@@ -51,9 +51,9 @@ export const FormContacts = () => {
             required
           />
           <ErrorMessage name="number" />
-        </FormField>
+        </label>
 
-        <button type="submit">Add contact</button>
+        <SubmitButton type="submit">Add contact</SubmitButton>
       </Form>
     </Formik>
   );
